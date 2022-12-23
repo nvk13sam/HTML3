@@ -14,7 +14,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 72px;
 }
 
@@ -94,9 +94,130 @@ body {
     font-size: 21px;
     line-height: 28px;
     color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
 }
 
-.footer {
+.logotip {
     margin-top: 200px;
+}
+
+.part2 {
+    margin-top: 282px;
+}
+
+.left_part2 {
+    background-color: #08101e;
+}
+
+.title2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    /* or 52px */
+    /* #FFFFFF */
+    color: #FFFFFF;
+}
+
+.parag2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+.part2but {
+    padding: 15px 30px;
+    gap: 10px;
+    color: #FFFFFF;
+    background: #3A68B8;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 50px;
+}
+
+.top_flex {
+    display: flex;
+    margin-top: 264px;
+    gap: 30px;
+}
+
+.item {
+    width: 362px;
+    background: #132035;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 362px;
+    height: 389px;
+}
+
+.title4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-top: 30px;
+}
+
+.text4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-top: 30px;
+}
+
+.left {
+    width: 754px;
+    height: 808px;
+    left: 387px;
+    top: 2418px;
+    background: #132035;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.title5 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-top: 60px;
+}
+
+.text5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-top: 60px;
+}
+
+.block {
+    width: 362px;
+    background: #132035;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 362px;
+    height: 389px;
+    margin-top: 30px;
+    margin-left: -40px;
 }
