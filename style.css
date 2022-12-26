@@ -96,6 +96,12 @@ body {
   color: #FFFFFF;
 }
 
+.index__button:hover {
+  color: red;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
 .logotip {
   margin-top: 200px;
 }
@@ -140,6 +146,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   margin-top: 50px;
+}
+
+.part2but:hover {
+  color: red;
+  background-color: #fff;
+  border: 2px solid red;
 }
 
 .top_flex {
