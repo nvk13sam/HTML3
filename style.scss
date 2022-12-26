@@ -95,12 +95,19 @@ body {
     font-size: 21px;
     line-height: 28px;
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .index__button:hover {
     color: red;
     background-color: #fff;
     border: 2px solid red;
+    text-decoration: none;
 }
 
 .logotip {
