@@ -1,0 +1,11 @@
+        .header {
+            @extend.margin;
+        }
+        
+        .header__menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }

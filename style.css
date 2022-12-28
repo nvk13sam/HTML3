@@ -12,19 +12,19 @@ body {
   padding-right: calc(50% - 572px);
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  gap: 72px;
-}
-
-.header {
-  background-color: 0a121f;
+.margin, .header {
+  background-color: #0a121f;
   height: 100px;
   margin-bottom: 160px;
   display: flex;
   gap: 32px;
   justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 72px;
 }
 
 .header__menu {
@@ -42,6 +42,10 @@ body {
   font-size: 16px;
   color: #FFFFFF;
   padding: 40px 20px;
+}
+
+.menu__link:hover {
+  color: #FFFFFF;
 }
 
 .content__left {
@@ -87,7 +91,7 @@ body {
 
 .index__button {
   padding: 15px 30px;
-  background: red;
+  background: #3A68B8;
   border-radius: 5px;
   gap: 10px;
   font-weight: 600;
@@ -101,14 +105,10 @@ a {
   color: #fff;
 }
 
-a:hover {
-  color: red;
-}
-
 .index__button:hover {
-  color: red;
+  color: #3A68B8;
   background-color: #fff;
-  border: 2px solid red;
+  border: 2px solid #3A68B8;
 }
 
 .logotip {
@@ -147,20 +147,20 @@ a:hover {
   padding: 15px 30px;
   gap: 10px;
   color: #FFFFFF;
-  background: red;
+  background: #3A68B8;
   border-radius: 5px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   margin-top: 50px;
 }
 
 .part2but:hover {
-  color: red;
+  color: #3A68B8;
   background-color: #fff;
-  border: 2px solid red;
+  border: 2px solid #3A68B8;
 }
 
 .top_flex {

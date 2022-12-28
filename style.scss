@@ -1,4 +1,3 @@
-$button_color:red;
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +5,25 @@ $button_color:red;
     box-sizing: border-box;
 }
 
+@import "var";
 body {
-    background-color: #08101e;
+    background-color: $bc;
     font-family: 'Open Sans', sans-serif;
     padding-left: calc(50% - 572px);
     padding-right: calc(50% - 572px);
+}
+
+.header {
+    @extend.margin;
+}
+
+.margin {
+    background-color: $bccontent;
+    height: 100px;
+    margin-bottom: 160px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
 }
 
 .container {
@@ -19,23 +32,7 @@ body {
     gap: 72px;
 }
 
-.header {
-    background-color: 0a121f;
-    height: 100px;
-    margin-bottom: 160px;
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-}
-
-.header__menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
-
+@import "header";
 .menu__link {
     text-decoration: none;
     font-style: normal;
@@ -43,6 +40,10 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     padding: 40px 20px;
+}
+
+.menu__link:hover {
+    color: #FFFFFF;
 }
 
 .content__left {
@@ -102,14 +103,10 @@ a {
     color: #fff;
 }
 
-a:hover {
-    color: red;
-}
-
 .index__button:hover {
-    color: red;
+    color: $button_color;
     background-color: #fff;
-    border: 2px solid red;
+    border: 2px solid $button_color;
 }
 
 .logotip {
@@ -121,7 +118,7 @@ a:hover {
 }
 
 .left_part2 {
-    background-color: #08101e;
+    background-color: $bc;
 }
 
 .title2 {
@@ -153,15 +150,15 @@ a:hover {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     margin-top: 50px;
 }
 
 .part2but:hover {
-    color: red;
+    color: $button_color;
     background-color: #fff;
-    border: 2px solid red;
+    border: 2px solid $button_color;
 }
 
 .top_flex {
@@ -265,7 +262,7 @@ a:hover {
 
 .footer {
     margin-top: 221px;
-    background-color: #0a121f;
+    background-color: $bccontent;
     backdrop-filter: blur(100px);
     border-radius: 10px;
     padding: 48px;
