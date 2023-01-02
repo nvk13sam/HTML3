@@ -1,3 +1,25 @@
+@-webkit-keyframes myAnim {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  10% {
+    background-color: red;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes myAnim {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  10% {
+    background-color: red;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -38,14 +60,16 @@ body {
 .menu__link {
   text-decoration: none;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFFFFF;
+  font-weight: 600px;
+  font-size: 32px;
+  color: red;
   padding: 40px 20px;
+  transition: all 3s;
 }
 
 .menu__link:hover {
   color: #FFFFFF;
+  transform: scale(1.5) translateX(100px);
 }
 
 .content__left {
@@ -105,7 +129,11 @@ a {
   color: #fff;
 }
 
-.index__button:hover {
+.button__box:hover .index__button {
+  margin-bottom: 300px;
+}
+
+.button__box:hover .index__button:hover {
   color: #3A68B8;
   background-color: #fff;
   border: 2px solid #3A68B8;
@@ -117,6 +145,14 @@ a {
 
 .part2 {
   margin-top: 282px;
+}
+
+.left_part2:hover {
+  transform: skew(30deg, 20deg);
+}
+
+.content__right:hover {
+  transform: scale(1.5);
 }
 
 .left_part2 {
@@ -161,6 +197,7 @@ a {
   color: #3A68B8;
   background-color: #fff;
   border: 2px solid #3A68B8;
+  animation: myAnim 7s linear 2s infinite reverse both;
 }
 
 .top_flex {
